@@ -5,7 +5,7 @@
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://jobshield-au.streamlit.app)
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
-🚀 **Try the live app:** https://jobshield-au.streamlit.app
+ **Try the live app:** https://jobshield-au.streamlit.app
 
 JobShield AU analyses pasted job ads and recruiter messages using a hybrid of transparent fraud rules and an NLP classifier. Instead of returning only a label, it shows the warning signals it found, the model signal, and practical verification steps.
 
