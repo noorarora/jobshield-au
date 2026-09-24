@@ -7,8 +7,6 @@
 
 **Try the live app:** https://jobshield-au.streamlit.app
 
-![JobShield AU live app](docs/images/jobshield-au-live-demo.jpg)
-
 JobShield AU analyses pasted job ads and recruiter messages using a hybrid of transparent fraud rules and an NLP classifier. Instead of returning only a label, it shows the warning signals it found, the model signal, and practical verification steps.
 
 > **Prototype disclaimer:** JobShield AU is decision support. A high score does not prove fraud and a low score does not prove legitimacy.
