@@ -2,6 +2,11 @@
 
 **Explainable job-scam screening for job seekers.**
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://jobshield-au.streamlit.app)
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+
+🚀 **Try the live app:** https://jobshield-au.streamlit.app
+
 JobShield AU analyses pasted job ads and recruiter messages using a hybrid of transparent fraud rules and an NLP classifier. Instead of returning only a label, it shows the warning signals it found, the model signal, and practical verification steps.
 
 > **Prototype disclaimer:** JobShield AU is decision support. A high score does not prove fraud and a low score does not prove legitimacy.
@@ -16,6 +21,16 @@ JobShield AU analyses pasted job ads and recruiter messages using a hybrid of tr
 - Combines ML and rule evidence into a screening score
 - Provides clear next-step guidance instead of an accusation
 - Falls back safely to rules if the ML model cannot load
+
+## Live demo
+
+The public prototype is deployed on Streamlit Community Cloud:
+
+**https://jobshield-au.streamlit.app**
+
+For a quick test, select **Load example** and then **Analyse for risk**. You can also paste your own job advertisement, recruiter email, SMS, or direct message.
+
+No account is required to use the current prototype.
 
 ## Model result
 
@@ -127,6 +142,10 @@ GitHub Actions is included and runs the test suite on Python 3.11 and 3.12.
 
 Python · Streamlit · pandas · NumPy · scikit-learn · TF-IDF · Logistic Regression · joblib
 
+## Deployment
+
+The current public prototype is deployed on **Streamlit Community Cloud** from the `main` branch. Updates pushed to the repository can be redeployed to the live app.
+
 ## Current scope
 
 JobShield currently analyses **text supplied by the user**. It does not automatically scrape SEEK/LinkedIn, prove recruiter identity, or independently verify a company. Those are intentionally presented as future work rather than existing functionality.
@@ -140,7 +159,7 @@ JobShield currently analyses **text supplied by the user**. It does not automati
 - Screenshot/message analysis
 - Sensitive-information warnings
 - Modern embedding-model benchmark
-- Public deployment
+- Improved public-demo monitoring and feedback collection
 
 ## License
 
