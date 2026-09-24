@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+.env
+.env.*
+data/fake_job_postings.csv
+.streamlit/secrets.toml

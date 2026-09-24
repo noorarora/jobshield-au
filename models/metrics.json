@@ -1,0 +1,190 @@
+{
+  "model": "TF-IDF (1-2 grams) + Logistic Regression",
+  "training_source": "EMSCAD/Kaggle-compatible",
+  "raw_rows": 17880,
+  "rows": 17880,
+  "unique_rows_after_exact_dedup": 16201,
+  "exact_duplicate_rows_removed": 1679,
+  "raw_class_distribution": {
+    "legitimate": 17014,
+    "fraudulent": 866
+  },
+  "unique_class_distribution": {
+    "legitimate": 15465,
+    "fraudulent": 736
+  },
+  "split": {
+    "train_rows": 11340,
+    "validation_rows": 2430,
+    "test_rows": 2431,
+    "train_fraud": 515,
+    "validation_fraud": 110,
+    "test_fraud": 111,
+    "random_seed": 42
+  },
+  "threshold_selection": {
+    "objective": "Maximise fraud-class F1 on validation split",
+    "selected_threshold": 0.62,
+    "validation": {
+      "threshold": 0.62,
+      "precision_fraud": 0.8241,
+      "recall_fraud": 0.8091,
+      "f1_fraud": 0.8165,
+      "f2_fraud": 0.812,
+      "accuracy": 0.9835,
+      "pr_auc": 0.8743,
+      "roc_auc": 0.9847,
+      "confusion_matrix": [
+        [
+          2301,
+          19
+        ],
+        [
+          21,
+          89
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.9909560723514211,
+          "recall": 0.9918103448275862,
+          "f1-score": 0.99138302455838,
+          "support": 2320.0
+        },
+        "1": {
+          "precision": 0.8240740740740741,
+          "recall": 0.8090909090909091,
+          "f1-score": 0.8165137614678899,
+          "support": 110.0
+        },
+        "accuracy": 0.9835390946502057,
+        "macro avg": {
+          "precision": 0.9075150732127476,
+          "recall": 0.9004506269592476,
+          "f1-score": 0.9039483930131349,
+          "support": 2430.0
+        },
+        "weighted avg": {
+          "precision": 0.9834017432112944,
+          "recall": 0.9835390946502057,
+          "f1-score": 0.9834671319904977,
+          "support": 2430.0
+        }
+      }
+    }
+  },
+  "test": {
+    "threshold": 0.62,
+    "precision_fraud": 0.8738,
+    "recall_fraud": 0.8108,
+    "f1_fraud": 0.8411,
+    "f2_fraud": 0.8227,
+    "accuracy": 0.986,
+    "pr_auc": 0.8971,
+    "roc_auc": 0.9886,
+    "confusion_matrix": [
+      [
+        2307,
+        13
+      ],
+      [
+        21,
+        90
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.990979381443299,
+        "recall": 0.9943965517241379,
+        "f1-score": 0.9926850258175559,
+        "support": 2320.0
+      },
+      "1": {
+        "precision": 0.8737864077669902,
+        "recall": 0.8108108108108109,
+        "f1-score": 0.8411214953271028,
+        "support": 111.0
+      },
+      "accuracy": 0.986013986013986,
+      "macro avg": {
+        "precision": 0.9323828946051447,
+        "recall": 0.9026036812674744,
+        "f1-score": 0.9169032605723293,
+        "support": 2431.0
+      },
+      "weighted avg": {
+        "precision": 0.9856283242330685,
+        "recall": 0.986013986013986,
+        "f1-score": 0.985764601348432,
+        "support": 2431.0
+      }
+    }
+  },
+  "test_at_default_0_5": {
+    "threshold": 0.5,
+    "precision_fraud": 0.744,
+    "recall_fraud": 0.8378,
+    "f1_fraud": 0.7881,
+    "f2_fraud": 0.8172,
+    "accuracy": 0.9794,
+    "pr_auc": 0.8971,
+    "roc_auc": 0.9886,
+    "confusion_matrix": [
+      [
+        2288,
+        32
+      ],
+      [
+        18,
+        93
+      ]
+    ],
+    "classification_report": {
+      "0": {
+        "precision": 0.9921942758022549,
+        "recall": 0.9862068965517241,
+        "f1-score": 0.9891915261565067,
+        "support": 2320.0
+      },
+      "1": {
+        "precision": 0.744,
+        "recall": 0.8378378378378378,
+        "f1-score": 0.788135593220339,
+        "support": 111.0
+      },
+      "accuracy": 0.9794323323735088,
+      "macro avg": {
+        "precision": 0.8680971379011275,
+        "recall": 0.9120223671947809,
+        "f1-score": 0.8886635596884229,
+        "support": 2431.0
+      },
+      "weighted avg": {
+        "precision": 0.9808616700375283,
+        "recall": 0.9794323323735088,
+        "f1-score": 0.9800112675979239,
+        "support": 2431.0
+      }
+    }
+  },
+  "selected_threshold": 0.62,
+  "precision_fraud": 0.8738,
+  "recall_fraud": 0.8108,
+  "f1_fraud": 0.8411,
+  "f2_fraud": 0.8227,
+  "accuracy": 0.986,
+  "pr_auc": 0.8971,
+  "roc_auc": 0.9886,
+  "confusion_matrix": [
+    [
+      2307,
+      13
+    ],
+    [
+      21,
+      90
+    ]
+  ],
+  "trained_at_utc": "2026-09-24T02:30:33.893517+00:00",
+  "warning": "Held-out metrics are specific to this historical dataset and split; they do not guarantee performance on current real-world scams."
+}
