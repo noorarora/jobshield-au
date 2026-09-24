@@ -32,6 +32,20 @@ For a quick test, select **Load example** and then **Analyse for risk**. You can
 
 No account is required to use the current prototype.
 
+## Product preview
+
+### Analyse a job or recruiter message
+
+Paste a job advertisement or recruiter message, then optionally provide the claimed company domain and recruiter email for extra context.
+
+![JobShield AU analysis interface](docs/images/jobshield-analyse.jpg)
+
+### Explainable risk analysis
+
+JobShield combines rule-based warning signals with the NLP classifier and shows the reasons behind the screening result instead of returning only a label.
+
+![JobShield AU high-risk analysis result](docs/images/jobshield-result.jpg)
+
 ## Model result
 
 The baseline dataset contained **17,880 labelled job postings**. Before splitting, **1,679 exact duplicate combined-text rows** were removed, leaving 16,201 unique examples. A stratified 70/15/15 train/validation/test split was used, and the decision threshold was selected on validation data only.
